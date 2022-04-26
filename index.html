@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel_style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>shop online</title>
+</head>
+<body class="bg-light">
+      
+  <!--nav-bar-->
+        <nav class="navbar navbar-expand-lg  sticky-top  p-0" style="background-color: #022534;">
+  <div class="container">
+    <a class="navbar-brand" href="#"> <img class="logo" style="width: 50px;" src="image/logo1.png" alt=""> </a> 
+  
+    <ul class="navbar-nav">
+    <li class="nav-item dropdown ">
+      <a class="nav-link   pt-1 pb-2" href="#" id="navbarDarkDropdownMenuLink" role="" data-bs-toggle="dropdown" aria-expanded="false"><span class="svg"><i class="fa-regular fa-user"></i>  </span>login</a>
+      <ul class="dropdown-menu dropdown-blok dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+        <li><a class="dropdown-item" href="my_profille.html">My Profille</a></li>
+        <li><a class="dropdown-item" href="sing_in.html">sing in</a></li>
+        <li><a class="dropdown-item" href="sing_company.html">sing in company</a></li> 
+      </ul>
+    </li>
+  </ul>
+
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="mainmenu">
+      <ul class="navbar-nav  ms-auto  ">
+        <li class="nav-item pe-5 pt-1">
+          <a class="nav-link " aria-current="page" href="#"> <span class="svg"><i class="fa-solid fa-house pe-2"></i></span> Home</a>
+        </li>
+        <li class="nav-item pe-5  pt-1 position-relative ps-2" >
+          <a class="nav-link " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" > <span class="svg"><i class="fa-solid fa-cart-shopping pe-2 "></i> </span>shop</a>
+          <span class="position-absolute pt-2  mt-2  top-0 start-0 translate-middle badge rounded-pill bg-danger">
+            5+
+            <span class="visually-hidden">unread messages</span>
+          </span>
+          <div class="container">
+            <div class="offcanvas offcanvas-top h-75" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+              <div class="offcanvas-header bg-light">
+                <h2 id="offcanvasTopLabel"  class=" text-info container fw-bold">Shop</h2>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+       
+              </div>
+              
+              <div class="offcanvas-body">
+                  <div class="container">
+                      <div class="row">
+            <!-------card-1-------->
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4" >
+                  <img src="image/w3.webp" class="rounded-start" style="height: 250px; width: 350px;" alt="...">
+                </div>
+                <div class="col-md-8 ">
+                  <div class="card-body">
+                    <h4 class="card-title">Dress</h4>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                  <div class=" ">
+                      <a href="#" class="btn btn-outline-primary ps-4 pe-4 p-2 me-5 mb-3"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"
+                      > <i class="bi bi-bag-check-fill"></i> Bay</a>
+                      <a href="#" class="btn btn-outline-danger ps-4 pe-4 p-2  me-5 mb-3"> <i class="bi bi-trash"></i> Delet</a>
+                      <!--------oben-bay------->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog ">
+                          <div class="modal-content bg-light">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Paying Off</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="mb-3">
+                                  <label for="recipient-name" class="col-form-label">Card name</label>
+                                  <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="recipient-name" class="col-form-label">Card Number</label>
+                                  <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="message-text" class="col-form-label">Password</label>
+                                  <input type="password" class="form-control" id="recipient-name" placeholder="">
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Buying</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+           <!-------card-2-------->
+           <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4" >
+                <img src="image/m2.webp" class="rounded-start" style="height: 250px; width: 350px;" alt="...">
+              </div>
+              <div class="col-md-8 ">
+                <div class="card-body">
+                  <h4 class="card-title">Shose</h4>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+                <div class=" ">
+                    <a href="#" class="btn btn-outline-primary ps-4 pe-4 p-2 me-5 mb-3"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"
+                    > <i class="bi bi-bag-check-fill"></i> Bay</a>
+                    <a href="#" class="btn btn-outline-danger ps-4 pe-4 p-2  me-5 mb-3"> <i class="bi bi-trash"></i> Delet</a>
+                    <!--------oben-bay------->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog ">
+                        <div class="modal-content bg-light">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Paying Off</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Card name</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                              </div>
+                              <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Card Number</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                              </div>
+                              <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Password</label>
+                                <input type="password" class="form-control" id="recipient-name" placeholder="">
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Buying</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+         <!-------card-3-------->
+         <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4" >
+              <img src="image/w5.webp" class="rounded-start" style="height: 250px; width: 350px;" alt="...">
+            </div>
+            <div class="col-md-8 ">
+              <div class="card-body">
+                <h4 class="card-title">Dress</h4>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              <div class=" ">
+                  <a href="#" class="btn btn-outline-primary ps-4 pe-4 p-2 me-5 mb-3"
+                  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"
+                  > <i class="bi bi-bag-check-fill"></i> Bay</a>
+                  <a href="#" class="btn btn-outline-danger ps-4 pe-4 p-2  me-5 mb-3"> <i class="bi bi-trash"></i> Delet</a>
+                  <!--------oben-bay------->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog ">
+                      <div class="modal-content bg-light">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Paying Off</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="recipient-name" class="col-form-label">Card name</label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-name" class="col-form-label">Card Number</label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                              <label for="message-text" class="col-form-label">Password</label>
+                              <input type="password" class="form-control" id="recipient-name" placeholder="">
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Buying</button>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                 </div>
+               </div>
+            </div>
+          </div>
+       </div>
+     </div>                  
+  </div>
+ </div>          
+ </div> 
+        </li>
+        <li class="nav-item pe-5 pt-1">
+          <a class="nav-link" href="#"><span class="svg"><i class="fa-solid fa-hands-holding pe-2"></i></span>  Abaut</a>
+        </li>
+        <li class="nav-item pe-5 pt-1">
+          <a class="nav-link" href="#"><span class="svg"> <i class="fa-solid fa-phone pe-2"></i></span> Contact</a>
+        </li>
+      <li class="nav-item search ">
+        <a class="nav-link position-relative" href="#" >
+        <i class="fa-solid fa-magnifying-glass svg  p-2 position-absolute"></i>
+        <input  class="w-75 ps-4  " type="text" placeholder="search">
+        </a>
+      </li>
+    </ul>
+    </div>
+  </div>
+</nav>
+
+<!-------------------------------------slider---------------------------------->
+<div id="carouselExampleCaptions" class="carousel slide  p-0 mb-5" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/s1.webp" class="" style="width: 100%; height: 500px;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/s5.jpg" style="width: 100%; height: 500px;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/s4.jpg" style="width: 100%; height: 500px;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--parallax-3-->
+<div  class="parallax img-fluid w-100" style="background-image:linear-gradient(rgb(2 37 52 / 30%),rgb(2 37 52 / 30%)),url('image/p3.webp');">
+</div>
+
+    <!------------------------------------------carosal--------------------->
+  <div class = "container">
+    <div class = "row my-5" data-aos="zoom-in-up">
+        <h1 class = "text-center">Featured Products</h1>
+        <p class = "fw-light w-75 mx-auto text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque est neque facilis debitis, repellat dolorem.</p>
+    </div>
+
+    <div class = "row g-4 my-5 mx-auto owl-carousel owl-theme " data-aos="zoom-in-up">
+        <div class = "col product-item mx-auto">
+            <div class = "product-img">
+                <img src = "image/w4.webp" alt = "" class = "img-fluid d-block mx-auto">
+                <span class = "heart-icon">
+                    <i class = "far fa-heart"></i>
+                </span>
+                <div class = "row btns w-100 mx-auto text-center">
+                  <a href="#" type = "button"  class = "btn btn-dark border col-6 py-2">
+                    <i class = "fa fa-cart-plus"></i> Add to Cart
+                </a>
+                  
+                    <a href="view_cart.html" type = "button"  class = "btn btn-dark border col-6 py-2">
+                        <i class = "fa fa-binoculars"></i> View
+                    </a>
+                </div>
+            </div>
+
+            <div class = "product-info p-3">
+                <span class = "product-type">Electronics & Accessories</span>
+                <a href = "#" class = "d-block text-dark text-decoration-none py-2 product-name">Apple - Apple Watch Series 3 White Sports Band</a>
+                <span class = "product-price">$ 100.50</span>
+                <div class = "rating d-flex mt-1">
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>(25 reviews)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class = "col product-item mx-auto">
+            <div class = "product-img">
+                <img src = "image/shw2.webp" alt = "" class = "img-fluid d-block mx-auto">
+                <span class = "heart-icon">
+                    <i class = "far fa-heart"></i>
+                </span>
+                <div class = "row btns w-100 mx-auto text-center">
+                  <a href="#" type = "button"  class = "btn btn-dark border col-6 py-2">
+                    <i class = "fa fa-cart-plus"></i> Add to Cart
+                </a>
+                  
+                    <a href="view_cart.html" type = "button"  class = "btn btn-dark border col-6 py-2">
+                        <i class = "fa fa-binoculars"></i> View
+                    </a>
+                </div>
+            </div>
+
+            <div class = "product-info p-3">
+                <span class = "product-type">Electronics & Accessories</span>
+                <a href = "#" class = "d-block text-dark text-decoration-none py-2 product-name">Apple - Apple Watch Series 3 White Sports Band</a>
+                <span class = "product-price">$ 100.50</span>
+                <div class = "rating d-flex mt-1">
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>(25 reviews)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class = "col product-item mx-auto">
+            <div class = "product-img">
+                <img src = "image/m4.webp" alt = "" class = "img-fluid d-block mx-auto">
+                <span class = "heart-icon">
+                    <i class = "far fa-heart"></i>
+                </span>
+                <div class = "row btns w-100 mx-auto text-center">
+                  <a href="#" type = "button"  class = "btn btn-dark border col-6 py-2">
+                    <i class = "fa fa-cart-plus"></i> Add to Cart
+                </a>
+                  
+                    <a href="view_cart.html" type = "button"  class = "btn btn-dark border col-6 py-2">
+                        <i class = "fa fa-binoculars"></i> View
+                    </a>
+                </div>
+            </div>
+
+            <div class = "product-info p-3">
+                <span class = "product-type">Electronics & Accessories</span>
+                <a href = "#" class = "d-block text-dark text-decoration-none py-2 product-name">Apple - Apple Watch Series 3 White Sports Band</a>
+                <span class = "product-price">$ 100.50</span>
+                <div class = "rating d-flex mt-1">
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>(25 reviews)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class = "col product-item mx-auto">
+            <div class = "product-img">
+                <img src = "image/m2.webp" alt = "" class = "img-fluid d-block mx-auto">
+                <span class = "heart-icon">
+                    <i class = "far fa-heart"></i>
+                </span>
+                <div class = "row btns w-100 mx-auto text-center">
+                  <a href="#" type = "button"  class = "btn btn-dark border col-6 py-2">
+                    <i class = "fa fa-cart-plus"></i> Add to Cart
+                </a>
+                  
+                    <a href="view_cart.html" type = "button"  class = "btn btn-dark border col-6 py-2">
+                        <i class = "fa fa-binoculars"></i> View
+                    </a>
+                </div>
+            </div>
+
+            <div class = "product-info p-3">
+                <span class = "product-type">Electronics & Accessories</span>
+                <a href = "#" class = "d-block text-dark text-decoration-none py-2 product-name">Apple - Apple Watch Series 3 White Sports Band</a>
+                <span class = "product-price">$ 100.50</span>
+                <div class = "rating d-flex mt-1">
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>(25 reviews)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class = "col product-item mx-auto">
+            <div class = "product-img">
+                <img src = "image/k3.webp" alt = "" class = "img-fluid d-block mx-auto">
+                <span class = "heart-icon">
+                    <i class = "far fa-heart"></i>
+                </span>
+                <div class = "row btns w-100 mx-auto text-center">
+                  <a href="#" type = "button"  class = "btn btn-dark border col-6 py-2">
+                    <i class = "fa fa-cart-plus"></i> Add to Cart
+                </a>
+                  
+                    <a href="view_cart.html" type = "button"  class = "btn btn-dark border col-6 py-2">
+                        <i class = "fa fa-binoculars"></i> View
+                    </a>
+                </div>
+            </div>
+
+            <div class = "product-info p-3">
+                <span class = "product-type">Electronics & Accessories</span>
+                <a href = "#" class = "d-block text-dark text-decoration-none py-2 product-name">Apple - Apple Watch Series 3 White Sports Band</a>
+                <span class = "product-price">$ 100.50</span>
+                <div class = "rating d-flex mt-1">
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>(25 reviews)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class = "col product-item mx-auto">
+            <div class = "product-img">
+                <img src = "image/m3.webp" alt = "" class = "img-fluid d-block mx-auto">
+                <span class = "heart-icon">
+                    <i class = "far fa-heart"></i>
+                </span>
+                <div class = "row btns w-100 mx-auto text-center">
+                  <a href="#" type = "button"  class = "btn btn-dark border col-6 py-2">
+                    <i class = "fa fa-cart-plus"></i> Add to Cart
+                </a>
+                  
+                    <a href="view_cart.html" type = "button"  class = "btn btn-dark border col-6 py-2">
+                        <i class = "fa fa-binoculars"></i> View
+                    </a>
+                </div>
+            </div>
+
+            <div class = "product-info p-3">
+                <span class = "product-type">Electronics & Accessories</span>
+                <a href = "#" class = "d-block text-dark text-decoration-none py-2 product-name">Apple - Apple Watch Series 3 White Sports Band</a>
+                <span class = "product-price">$ 100.50</span>
+                <div class = "rating d-flex mt-1">
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>(25 reviews)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class = "col product-item mx-auto">
+            <div class = "product-img">
+                <img src = "image/w1.webp" alt = "" class = "img-fluid d-block mx-auto">
+                <span class = "heart-icon">
+                    <i class = "far fa-heart"></i>
+                </span>
+                <div class = "row btns w-100 mx-auto text-center">
+                  <a href="#" type = "button"  class = "btn btn-dark border col-6 py-2">
+                    <i class = "fa fa-cart-plus"></i> Add to Cart
+                </a>
+                  
+                    <a href="view_cart.html" type = "button"  class = "btn btn-dark border col-6 py-2">
+                        <i class = "fa fa-binoculars"></i> View
+                    </a>
+                </div>
+            </div>
+
+            <div class = "product-info p-3">
+                <span class = "product-type">Electronics & Accessories</span>
+                <a href = "#" class = "d-block text-dark text-decoration-none py-2 product-name">Apple - Apple Watch Series 3 White Sports Band</a>
+                <span class = "product-price">$ 100.50</span>
+                <div class = "rating d-flex mt-1">
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>(25 reviews)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class = "col product-item mx-auto">
+            <div class = "product-img">
+                <img src = "image/k1.webp" alt = "" class = "img-fluid d-block mx-auto">
+                <span class = "heart-icon">
+                    <i class = "far fa-heart"></i>
+                </span>
+                <div class = "row btns w-100 mx-auto text-center">
+                  <a href="#" type = "button"  class = "btn btn-dark border col-6 py-2">
+                    <i class = "fa fa-cart-plus"></i> Add to Cart
+                </a>
+                  
+                    <a href="view_cart.html" type = "button"  class = "btn btn-dark border col-6 py-2">
+                        <i class = "fa fa-binoculars"></i> View
+                    </a>
+                </div>
+            </div>
+
+            <div class = "product-info p-3">
+                <span class = "product-type">Electronics & Accessories</span>
+                <a href = "#" class = "d-block text-dark text-decoration-none py-2 product-name">Apple - Apple Watch Series 3 White Sports Band</a>
+                <span class = "product-price">$ 100.50</span>
+                <div class = "rating d-flex mt-1">
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>(25 reviews)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class = "col product-item mx-auto">
+            <div class = "product-img">
+                <img src = "image/w5.webp" alt = "" class = "img-fluid d-block mx-auto">
+                <span class = "heart-icon">
+                    <i class = "far fa-heart"></i>
+                </span>
+                <div class = "row btns w-100 mx-auto text-center">
+                  <a href="#" type = "button"  class = "btn btn-dark border col-6 py-2">
+                    <i class = "fa fa-cart-plus"></i> Add to Cart
+                </a>
+                  
+                    <a href="view_cart.html" type = "button"  class = "btn btn-dark border col-6 py-2">
+                        <i class = "fa fa-binoculars"></i> View
+                    </a>
+                </div>
+            </div>
+
+            <div class = "product-info p-3">
+                <span class = "product-type">Electronics & Accessories</span>
+                <a href = "#" class = "d-block text-dark text-decoration-none py-2 product-name">Apple - Apple Watch Series 3 White Sports Band</a>
+                <span class = "product-price">$ 100.50</span>
+                <div class = "rating d-flex mt-1">
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>
+                        <i class = "fa fa-star"></i>
+                    </span>
+                    <span>(25 reviews)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+     <!--parallax-1-->
+  <div  class="parallax img-fluid w-100" style="background-image:linear-gradient(rgb(2 37 52 / 30%),rgb(2 37 52 / 30%)),url('image/s3.jpg');">
+  </div>
+  <!----------------today's deals---------->
+  <h1 class="text-center mt-5"  data-aos="zoom-in-up">Today's Deals</h1>
+  
+  <div  class="  container " >
+  <div class="row  mt-5 py-5 ">
+
+  <!--card1-->
+  <div class="col-lg-3  col-md-6 col-sm-6 pb-3" data-aos="zoom-in-up">
+    <div class="card1 " style="background-image:linear-gradient(rgba( 0, 0, 0, 0.2 ),rgba( 0, 0, 0, 0.2)),url('image/c-1.webp');">
+      <div class="card1-body"> 
+          <h1 class="card1-h1">Shose</h1>
+          <p class="bg-danger w-25 text-center p-1">50%</p>
+        <br>
+          <a href="view_cart.html" class="button">shoping</a>
+    </div>  
+  </div>
+</div>
+
+  <!--card2-->
+    <div class="col-lg-3  col-md-6 col-sm-6 pb-3" data-aos="zoom-in-up">
+      <div class="card1  " style="background-image:linear-gradient(rgba( 0, 0, 0, 0.2 ),rgba( 0, 0, 0, 0.2)),url('image/c-2.webp');">
+        <div class="card1-body"> 
+            <h1 class="card1-h1">Bags</h1>
+            <p class="bg-danger w-25 text-center p-1">10%</p>
+          <br>
+            <a href="view_cart.html" class="button">shoping</a>
+      </div>  
+    </div>
+  </div>
+
+  <!--card3-->
+    <div class="col-lg-3 col-sm-6 col-md-6 pb-3" data-aos="zoom-in-up">
+      <div class="card1  " style="background-image:linear-gradient(rgba( 0, 0, 0, 0.2 ),rgba( 0, 0, 0, 0.2)),url('image/c-3.webp');">
+        <div class="card1-body"> 
+            <h1 class="card1-h1">T-Shirt</h1>
+            <p class="bg-danger w-25 text-center p-1">30%</p>
+          <br>
+          <a href="view_cart.html" class="button">shoping</a>
+      </div>  
+    </div>
+  </div>
+
+  <!--card4-->
+    <div class="col-lg-3 col-sm-6 col-md-6 pb-3" data-aos="fade-left">
+      <div class="card1  " style="background-image:linear-gradient(rgba( 0, 0, 0, 0.2 ),rgba( 0, 0, 0, 0.2)),url('image/c-4.webp');">
+        <div class="card1-body"> 
+            <h1 class="card1-h1">Denim</h1>
+            <p class="bg-danger w-25 text-center p-1">17%</p>
+          <br>
+          <a href="view_cart.html" class="button">shoping</a>
+      </div>  
+    </div>
+  </div>
+    <!--card5-->
+    <div class="col-lg-3 col-sm-6 col-md-6 pb-3 " data-aos="fade-up-right">
+      <div class="card1  " style="background-image:linear-gradient(rgba( 0, 0, 0, 0.2 ),rgba( 0, 0, 0, 0.2)),url('image/c-5.webp');">
+        <div class="card1-body"> 
+            <h1 class="card1-h1">Jaket</h1>
+            <p class="bg-danger w-25 text-center p-1">40%</p>
+          <br>
+            <a href="view_cart.html" class="button">shoping</a>
+      </div>  
+    </div>
+  </div>
+
+  <!--card6-->
+    <div class="col-lg-3 col-sm-6 col-md-6 pb-3" data-aos="zoom-in-up">
+      <div class="card1  " style="background-image:linear-gradient(rgba( 0, 0, 0, 0.2 ),rgba( 0, 0, 0, 0.2)),url('image/c-6.webp');">
+        <div class="card1-body"> 
+            <h1 class="card1-h1">Baby Bodysuit</h1>
+            <p class="bg-danger w-25 text-center p-1">33%</p>
+          <br>
+            <a href="view_cart.html" class="button">shoping</a>
+      </div>  
+    </div>
+  </div>
+
+  <!--card7-->
+    <div class="col-lg-3 col-sm-6 col-md-6 pb-3" data-aos="zoom-in-up">
+      <div class="card1  " style="background-image:linear-gradient(rgba( 0, 0, 0, 0.2 ),rgba( 0, 0, 0, 0.2)),url('image/c-7.webp');">
+        <div class="card1-body"> 
+            <h1 class="card1-h1">Shose Baby</h1>
+            <p class="bg-danger w-25 text-center p-1">62%</p>
+          <br>
+            <a href="view_cart.html" class="button">shoping</a>
+      </div>  
+    </div>
+  </div>
+
+  <!--card8-->
+    <div class="col-lg-3 col-sm-6 col-md-6 pb-3" data-aos="fade-up-left">
+      <div class="card1" style="background-image:linear-gradient(rgba( 0, 0, 0, 0.2 ),rgba( 0, 0, 0, 0.2)),url('image/c-8.webp');">
+        <div class="card1-body"> 
+            <h1 class="card1-h1">Decor Ring</h1>
+            <p class="bg-danger w-25 text-center p-1">12%</p>
+          <br>
+            <a href="view_cart.html" class="button">shoping</a>
+      </div>  
+    </div>
+  </div>
+
+ </div>
+     
+</div>
+      <!--parallax-2-->
+  <div  class="parallax img-fluid" style="background-image:linear-gradient(rgb(2 37 52 / 30%),rgb(2 37 52 / 30%)),url('image/p4.gif');">
+  </div>
+   <!-----------------------------Shop By Category------------------------------------->   
+   <div class="text-center mt-5" data-aos="zoom-in-up"><h1>Shop By Category</h1> </div>
+  <div  class="  container">
+    <div class="row  mt-5 py-5 ">
+    <!--card1-->
+    <div class=" col-md-4 pb-3" data-aos="fade-up-right">
+      <div class="card1  " style="background-image:linear-gradient(rgba( 0, 0, 0, 0.2 ),rgba( 0, 0, 0, 0.2)),url('image/Category\ w1.webp');">
+        <div class="card1-body"> 
+            <h1 class="card1-h1">Women</h1>
+            <p>Women Clothes</p>
+          <br>
+            <a href="filter_page.html" class="button">shoping</a>
+      </div>  
+    </div>
+  </div>
+
+    <!--card2-->
+      <div class=" col-md-4 pb-3" data-aos="zoom-in-up">
+        <div class="card1  " style="background-image:linear-gradient(rgba( 0, 0, 0, 0.2 ),rgba( 0, 0, 0, 0.2)),url('image/Category\ m2.webp');">
+          <div class="card1-body"> 
+              <h1 class="card1-h1">Men</h1>
+              <p>Men Clothes</p>
+            <br>
+              <a href="filter_page.html" class="button">shoping</a>
+        </div>  
+      </div>
+    </div>
+
+    <!--card3-->
+      <div class=" col-md-4 pb-3" data-aos="fade-up-left">
+        <div class="card1  " style="background-image:linear-gradient(rgba( 0, 0, 0, 0.2 ),rgba( 0, 0, 0, 0.2)),url('image/Category\ k3.jpg');">
+          <div class="card1-body"> 
+              <h1 class="card1-h1">kids</h1>
+              <p>boy and girls</p>
+            <br>
+            <a href="filter_page.html" class="button">shoping</a>
+        </div>  
+      </div>
+    </div>
+   </div>
+  </div>
+  <!--shop_by_brand-->
+  <div class="container">
+  <div class="row g-4 pb-5 pt-5 w-100 ">
+    <h2 class="text-center p-5" data-aos="zoom-in-up">Shop by brand</h2>
+    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right">
+     <a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter " href="companys.html"><img class="d-block mx-auto" src="image/c_adidas.png" style="width: 150px;"></a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right">
+      <a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="companys.html"><img class="d-block mx-auto" src="image/c_amirican.png" style="width: 150px;"></a>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-left">
+      <a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="companys.html"><img class="d-block mx-auto" src="image/c_brooks.png" style="width: 150px;"></a>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-left">
+      <a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="companys.html"><img class="d-block mx-auto" src="image/c_columbia.png" style="width: 150px;"></a>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right">
+      <a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter " href="companys.html"><img class="d-block mx-auto" src="image/c_dior.png" style="width: 150px;"></a>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right">
+      <a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="companys.html"><img class="d-block mx-auto" src="image/c_fila.png" style="width: 150px;"></a>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 " data-aos="fade-left">
+      <a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="companys.html"><img class="d-block mx-auto" src="image/c_hermes.png" style="width: 150px;"></a>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-left">
+      <a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="companys.html"><img class="d-block mx-auto" src="image/c_nb.png" style="width: 150px;"></a>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right">
+      <a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter " href="companys.html"><img class="d-block mx-auto" src="image/c_nike.png" style="width: 150px;"></a>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right">
+      <a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="companys.html"><img class="d-block mx-auto" src="image/c_puma.png" style="width: 150px;"></a>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 " data-aos="fade-left">
+      <a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="companys.html"><img class="d-block mx-auto" src="image/c_RB.png" style="width: 150px;"></a>
+     </div>
+     <div class="col-lg-3 col-md-4 col-sm-6 " data-aos="fade-left">
+      <a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="companys.html"><img class="d-block mx-auto" src="image/c_tommy.png" style="width: 150px;"></a>
+     </div>
+  </div>
+</div><br><br><br><br>
+<!-------------------------------------------------------------->
+<div class="container" data-aos="zoom-in-up">
+  <hr>
+  <br>
+  <div class="row g-3">
+     <div class="col-lg-3  col-sm-6">
+       <a class=" d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter text-center h-100" href=""> <img class=" w-50" src="image/paypalll.png" alt=""></a>
+     </div>
+     <div class="col-lg-3  col-sm-6">
+      <a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter text-center h-100" href=""> <img class="w-50" src="image/master card.png" alt=""></a>
+    </div>
+    <div class="col-lg-3  col-sm-6">
+      <a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter text-center h-100" href=""> <img class="w-50" src="image/visaa.png" alt=""></a>
+    </div>
+    <div class="col-lg-3  col-sm-6">
+      <a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter text-center h-100" href=""> <img class="w-50" src="image/ebayy.png" alt=""></a>
+    </div>
+  </div>
+  </div>
+<!----------------------------------------footer----------------------------->
+<footer class="bd-footer py-3 mt-5">
+  <div class="container py-3">
+    <div class="row text-center">
+      <div class="col-lg-4 mb-3"  data-aos="fade-up-right">
+        <h1>QN</h1>
+          <h5>Paying Off</h5>
+        <ul class="list-unstyled ">
+          <li class="mb-2 "><a href="/">PayPal <i class="fa-brands fa-cc-paypal"></i></a></li>
+          <li class="mb-2"><a href="/">Western Union <i class="fa-brands fa-cc-visa"></i></a></li>
+          <li class="mb-2"><a href="/">Pay Cash  <i class="fa-solid fa-cash-register"></i></a></li>
+        </ul>
+      </div>
+      <div class=" col-lg-4 mb-3"  data-aos="zoom-in-up">
+        <h5>Delivery Via</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="/">Car <i class="fa-solid fa-truck-moving"></i></a></li>
+          <li class="mb-2"><a href="/">Motorcycle <i class="fa-solid fa-dolly"></i></a></li>
+          <li class="mb-2"><a href="/">Airplane <i class="fa-solid fa-plane"></i></a></li>
+        </ul>
+      </div>
+      <div class=" col-lg-4 " data-aos="fade-up-left">
+        <h5>social media</h5>
+        <div class="mt-5">
+        <ul class="list-sosal ">
+          <li class="list-sosal me-3"><a class="feacbook" href="/"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li class="list-sosal me-3"><a class="instagram" href="/"><i class="fa-brands fa-instagram"></i></a></li>
+          <li class="list-sosal "><a class="twitter" href="/"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="up">
+  <i class="fa-regular fa-circle-up fs-1 bg-white rounded-circle"></i>
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/font.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/carousel_script.js"></script>
+</body>
+</html>
