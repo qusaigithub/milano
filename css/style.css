@@ -1,0 +1,174 @@
+@charset "utf-8";
+:root{
+    --nav-color : #022534;
+    --btn-color : #050f13;
+    --font-color : #8aecc7;
+    --white-color :#ffffff;
+   	--primary: #2175f5;
+}
+*{
+    font-family: "Roboto" ,sans-serif;
+}
+/*-navbar-*/
+.navbar .navbar-nav  .nav-link ,
+a{
+    color:white;
+  	text-decoration: none;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover,
+a:hover{
+    color: var(--font-color);
+}
+.navbar-nav .nav-link{
+    position: relative;
+    font-size: 16px;
+} 
+.navbar-nav .nav-link::after{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 50%;                             
+    width: 0%;
+    height: 2px;
+    background-color:var(--font-color);
+    transition: 0.4s ease;
+}
+.navbar-nav .nav-link:hover::after{
+    left: 0%;
+    width: 100%;
+}
+.navbar .search{
+    border-left: 1px solid var(--white-color);
+}
+.navbar .svg{
+    color: var(--font-color);
+}
+.navbar .navbar-toggler{
+   color: var(--white-color);
+   font-size: 25px;
+   border:1px solid var(--white-color) ;
+}
+/*---------------------------------------card--------------------------------*/
+.card1{
+   margin-inline: auto;   
+   color: var(--white-color);
+   background-size: cover;
+   width: 250px;
+   padding: 150px 0px 0px 0px;
+   max-width: 35ch;
+   overflow: hidden;
+   transition: transform 500ms ease;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+.card1:hover{
+   transform: scale(1.1);
+   z-index: 5;    
+} 
+.card1-body{
+   padding:1.5em;
+   background:linear-gradient(hsl(0 0% 0% /0),hsl(20 0% 0% /0.6)30%, hsl(0 0% 0% /1));
+}
+@media (hover){
+    .card1-body{
+    transform: translateY(40%);
+    transition: transform 600ms ease;
+    }
+    .card1:hover .card1-body{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+.card1:focus-within .card1-body{
+    transition-duration:500ms;
+}
+.card1-body > *:not(.card-h1){
+    opacity: 1;
+    transition: opacity 200ms linear;
+}
+.card1:hover .card1-body > * :not(.card1-h1){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+.card1-h1::after{
+    transform: scaleX(0);
+}
+}
+.card1-h1{
+   position: relative;
+    width: max-content;
+    font-size: 30px;   
+}
+.card1-h1::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: var(--font-color);
+    transition: transform 300ms ease;
+}
+.card1:hover .card1-h1::after{
+    transform: scaleX(1);
+}
+.loves {
+  display: flex;
+  margin-left: 5px;
+  width: 10px;
+  font-size: 40px;
+  border: none;
+  background: transparent;
+  color: white;
+   transition: transform 500ms ease;
+}
+.loves:hover{
+  transform: scale(1);
+}
+.button{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--nav-color);
+    background-color: var(--font-color);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.5s;
+    }
+.button:hover{
+    color: var(--nav-color);
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+/*--parallax--*/
+.parallax{
+  position: relative;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 400px;
+    margin-top: 200px;
+
+  background-position: center;
+}	
+		/*------------------------------footer---------------------*/
+.bd-footer{background-color: var(--nav-color);color: var(--font-color);}
+.feacbook{font-size: 20px; border: 1px solid var(--white-color) ;  border-radius:40px; padding:18px 23px 18px 23px;}
+.feacbook:hover{color: var(--primary); border:1px solid var(--primary);}
+.instagram{font-size: 20px; border: 1px solid var(--white-color) ;  border-radius:40px; padding:17px 20px 17px 20px;  }
+.instagram:hover{color: #fa007d; border:1px solid #fa007d;}
+.twitter{font-size: 20px; border: 1px solid var(--white-color) ;  border-radius:40px; padding:17px 19px 17px 19px;}
+.twitter:hover{color: var(--primary); border:1px solid var(--primary);}
+.list-sosal{ display:inline;}
+.modal-backdrop {z-index: 1000;}
+/*---------------------------------scroll-up-----------------------------------------*/
+.up{
+    position: fixed;
+    bottom: 30px;
+    right: -70px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.up.show{
+    right: 20px;
+}
